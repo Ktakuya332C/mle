@@ -17,7 +17,7 @@ Then use module from same level to the eum directory as
 	res2 = eum.optiml_basket([0.1, 0.1, 0.1])
 	# res2 must be 0 indicates none should be chosen
 
-Argument to the optimal_basket must be sorted in descending order
+Argument to the optimal_basket must be sorted in descending order. Note that you cannot use this module in the `eum` directory in the same manner as shown in above.
 
 If you want to generate swig file then
 
