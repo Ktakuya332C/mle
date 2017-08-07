@@ -1,6 +1,5 @@
 #include "eum.h"
 
-#include <iostream> // To Debug
 int optimal_basket(std::vector<double> &probs) {
     int size = probs.size();
     
