@@ -1,6 +1,6 @@
-EUM module
+EUM (Empirical Utility Maximization)
 ----
-An implementation of the paper [Optimizing F measure: A Take of Two approaches](https://www.comp.nus.edu.sg/~leews/publications/fscore.pdf) in python.
+An implementation of the paper [Optimizing F measure: A Take of Two approaches](https://arxiv.org/abs/1206.4625) in python.
 
 ## Compilation
 ```
