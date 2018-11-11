@@ -1,45 +1,14 @@
-EUM (Empirical Utility Maximization)
+ML^E
 ----
-An implementation of the paper [Optimizing F measure: A Take of Two approaches](https://arxiv.org/abs/1206.4625) in python.
+An implementation of the paper [Optimizing F measure: A Take of Two approaches](https://arxiv.org/abs/1206.4625) in python. Specifically, this library implements the ML^E algorithm described in the paper.
 
-## Compilation
+## Installation
 ```
-$ cd eum
-$ python setup.py build_ext --inplace
+$ pip install git+https://github.com/Ktakuya332C/eum
 ```
 
-## Example Usage
-```
-$ cd ..
-$ ls
-eum
-$ python
->>> import eum
->>> 
->>> res = eum.optimal_basket([0.9, 0.9, 0.1])
->>> assert res == 2
->>> # 'res' must be equal to 2
->>> # because the top two values are high
->>> # but the last one is not.
->>> 
->>> res2 = eum.optimal_basket([0.1, 0.1, 0.1])
->>> assert res2 == 0
-```
-Note that an argument to the function `optimal_basket` must be sorted in descending order.
+## Usage
+See `example`.
 
-## Notes
-* `eum_wrap.cxx` is generated automatically from interface file `eum.i` by using [swig](http://www.swig.org). To generate the cxx file from the interface file, please execute
-    
-    ```
-    cd eum
-    $ swig -python -c++ eum.i
-    ```
-* The implementation was tested a little in `eum_test.cc`. To see whether the implementation passes the test, execute
-    
-    ```
-    $ cd eum
-    $ make
-    $ ./eum_test
-    ```
     
 

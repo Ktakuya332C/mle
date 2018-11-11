@@ -1,3 +1,5 @@
+# To compile the test script mlt_test.cpp
+
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
 
