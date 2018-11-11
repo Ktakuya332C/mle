@@ -1,15 +1,16 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
 
-eum_test: eum_test.o eum.o
+mle_test: mle_test.o mle.o
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
-eum_test.o: eum_test.cc
+mle_test.o: mle_test.cpp
 	$(CXX) $(CXXFLAGS) -c $^ -o $@
 
-eum.o: eum.cc
+mle.o: mle.cpp
 	$(CXX) $(CXXFLAGS) -c $^ -o $@
 
 .PHONY: clean
 clean:
-	rm *.o eum_test
+	rm *.o mle_test
+
