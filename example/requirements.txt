@@ -1,0 +1,2 @@
+-e git+https://github.com/Ktakuya332C/mle.git#egg=mle
+sklearn

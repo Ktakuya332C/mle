@@ -10,16 +10,16 @@ from sklearn.metrics import f1_score
 
 from mle import optimal_basket
 
-N_CLASSES = 10
-MEAN_N_LABELS = 6
+N_CLASSES = 20
+MEAN_N_LABELS = 14
 N_TRAIN = 100
 N_TEST = 100
 
 # Prepare dataset
-X_train, Y_train = make_multilabel_classification(
-    n_samples=N_TRAIN, n_classes=N_CLASSES, n_labels=MEAN_N_LABELS)
-X_test, Y_test = make_multilabel_classification(
-    n_samples=N_TEST, n_classes=N_CLASSES, n_labels=MEAN_N_LABELS)
+X, Y = make_multilabel_classification(
+    n_samples=N_TRAIN+N_TEST, n_classes=N_CLASSES, n_labels=MEAN_N_LABELS)
+X_train, X_test = X[:N_TRAIN], X[N_TRAIN:]
+Y_train, Y_test = Y[:N_TRAIN], Y[N_TRAIN:]
 
 # Train a classifier
 clf = OneVsRestClassifier(LogisticRegression())
