@@ -4,7 +4,7 @@ An implementation of the paper [Optimizing F measure: A Tale of Two approaches](
 
 ## Installation
 ```
-$ pip install git+https://github.com/Ktakuya332C/eum
+$ pip install git+https://github.com/Ktakuya332C/mle
 ```
 
 ## Usage
